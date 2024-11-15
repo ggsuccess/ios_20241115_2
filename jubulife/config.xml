@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.thebookcompany.jubulife" version="2.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="CDVWebViewEngine">
+        <param name="ios-package" value="CDVWebViewEngine" />
+    </feature>
+    <feature name="LaunchScreen">
+        <param name="ios-package" value="CDVLaunchScreen" />
+    </feature>
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="AppAvailability">
+        <param name="ios-package" value="AppAvailability" />
+    </feature>
+    <feature name="Badge">
+        <param name="ios-package" value="APPBadge" />
+    </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="FirebaseMessaging">
+        <param name="ios-package" value="FirebaseMessagingPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVWKInAppBrowser" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="ios-package" onload="true" value="APPLocalNotification" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
+    <name>jubulife</name>
+    <description>jubu life</description>
+    <author email="thebookdigital@gmail.com" href="https://cordova.apache.org">
+        thebookcompany
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="https://m.ju-bu.co.kr" />
+    <allow-navigation href="*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="gap://ready" />
+    <allow-navigation href="about:blank" />
+    <allow-navigation href="kakaolink:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="kakaolink:*" />
+    <allow-intent href="intent:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <icon height="20" src="res/icon/ios/icon-20.png" width="20" />
+    <icon height="29" src="res/icon/ios/icon-29.png" width="29" />
+    <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+    <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
+    <icon height="57" src="res/icon/ios/icon-57.png" width="57" />
+    <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+    <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+    <icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+    <icon height="84" src="res/icon/ios/icon-84.png" width="84" />
+    <icon height="1024" src="res/icon/ios/icon-1024.png" width="1024" />
+    <icon height="40" src="res/icon/ios/icon-20@2x.png" width="40" />
+    <icon height="60" src="res/icon/ios/icon-20@3x.png" width="60" />
+    <icon height="58" src="res/icon/ios/icon-29@2x.png" width="58" />
+    <icon height="87" src="res/icon/ios/icon-29@3x.png" width="87" />
+    <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+    <icon height="120" src="res/icon/ios/icon-40@3x.png" width="120" />
+    <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
+    <icon height="114" src="res/icon/ios/icon-57@2x.png" width="114" />
+    <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+    <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+    <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+    <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+    <splash src="res/images/Default@2x~universal~anyany.png" />
+    <config-file parent="NSCameraUsageDescription" platform="ios" target="*-Info.plist">
+        <string>이 앱은 사진 촬영을 위해 카메라 접근이 필요합니다.</string>
+    </config-file>
+    <config-file parent="NSLocationWhenInUseUsageDescription" platform="ios" target="*-Info.plist">
+        <string>이 앱은 위치 기반 서비스를 제공하기 위해 위치 접근이 필요합니다.</string>
+    </config-file>
+    <config-file parent="NSPhotoLibraryUsageDescription" platform="ios" target="*-Info.plist">
+        <string>이 앱은 사진을 업로드하기 위해 사진 라이브러리 접근이 필요합니다.</string>
+    </config-file>
+    <resource-file src="GoogleService-Info.plist" target="GoogleService-Info.plist" />
+    <config-file parent="NSAppTransportSecurity" platform="ios" target="*-Info.plist">
+        <dict>
+            <key>NSAllowsArbitraryLoads</key>
+            <true />
+        </dict>
+    </config-file>
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="MediaTypesRequiringUserActionForPlayback" value="none" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="deployment-target" value="11.0" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="Fullscreen" value="False" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenSpinnerColor" value="white" />
+    <preference name="SplashShowOnlyFirstTime" value="true" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="iosScheme" value="https" />
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="WKWebViewOnly" value="true" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+</widget>
